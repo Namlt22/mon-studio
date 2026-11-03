@@ -1,0 +1,15 @@
+:root { --ink: #1d2433; --muted: #5b6475; --bg: #fffaf3; --mon: #2f8fd8; --line: #eadfce; }
+@media (prefers-color-scheme: dark) {
+  :root { --ink: #ece7df; --muted: #a9a294; --bg: #1a1c22; --mon: #6cb6f0; --line: #343844; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.65 system-ui, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+header img { width: 72px; height: 72px; border-radius: 50%; }
+h1 { margin: 0; font-size: 1.7rem; line-height: 1.2; }
+h2 { margin-top: 2rem; font-size: 1.15rem; }
+a { color: var(--mon); }
+.muted { color: var(--muted); }
+nav { display: flex; flex-wrap: wrap; gap: 8px 20px; padding: 16px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+footer { margin-top: 40px; font-size: 0.9rem; color: var(--muted); }
